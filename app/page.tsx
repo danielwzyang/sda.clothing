@@ -1,5 +1,7 @@
+import Navbar from "@/components/ui/navbar"
+
 export default function Home() {
-  return <div>
-    <h1>SDA!!!!</h1>
-  </div>
+    return <div>
+        <Navbar />
+    </div>
 }
