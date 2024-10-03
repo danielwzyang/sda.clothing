@@ -3,10 +3,11 @@
 import Link from "next/link"
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription } from "./sheet"
 import { Menu } from "lucide-react"
+import Image from "next/image"
 
 export default function Navbar() {
     return <div className="h-[80px] relative flex items-center px-5">
-        <Link href="/"><img src="/sda.png" alt="icon" className="h-[40px]" /></Link>
+        <Link href="/"><Image src="/sda.png" alt="icon" height={40} width={40} /></Link>
         <div className="hidden sm:flex gap-7 absolute right-10">
             <Link href="/about" className="text-2xl hover:text-[#9e9e9e]">about</Link>
             <Link href="/collection" className="text-2xl hover:text-[#9e9e9e]">collection</Link>
