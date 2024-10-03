@@ -5,7 +5,7 @@ import "./globals.css";
 const coolvetica = localFont({src: "./fonts/Coolvetica.otf"})
 
 export const metadata: Metadata = {
-    title: "Stuyvesant Donated Apparel",
+    title: "SDA",
     description: "",
 };
 

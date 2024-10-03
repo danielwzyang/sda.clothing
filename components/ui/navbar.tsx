@@ -1,13 +1,32 @@
+"use client"
+
 import Link from "next/link"
+import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription } from "./sheet"
+import { Menu } from "lucide-react"
 
 export default function Navbar() {
     return <div className="h-[80px] relative flex items-center px-5">
-        <img src="/sda.png" alt="icon" className="h-[40px]"/>
+        <Link href="/"><img src="/sda.png" alt="icon" className="h-[40px]" /></Link>
         <div className="hidden sm:flex gap-7 absolute right-10">
-            <Link href="" className="text-2xl hover:text-[#9e9e9e]">about</Link>
-            <Link href="" className="text-2xl hover:text-[#9e9e9e]">collection</Link>
-            <Link href="" className="text-2xl hover:text-[#9e9e9e]">team</Link>
-            <Link href="" className="text-2xl hover:text-[#9e9e9e]">contact</Link>
+            <Link href="/about" className="text-2xl hover:text-[#9e9e9e]">about</Link>
+            <Link href="/collection" className="text-2xl hover:text-[#9e9e9e]">collection</Link>
+            <Link href="/team" className="text-2xl hover:text-[#9e9e9e]">team</Link>
+            <Link href="/contact" className="text-2xl hover:text-[#9e9e9e]">contact</Link>
         </div>
-    </div>   
+        <Sheet>
+            <SheetTrigger className="h-10 w-10 flex justify-center items-center absolute right-5 sm:hidden">
+                <Menu />
+            </SheetTrigger>
+            <SheetContent className="mt-20 w-fit h-fit bg-transparent border-0 p-0 pr-8" onOpenAutoFocus={(e) => e.preventDefault()}>
+                <SheetTitle></SheetTitle>
+                <SheetDescription></SheetDescription>
+                <div className="flex flex-col gap-1 ">
+                    <Link href="/about" className="text-2xl hover:text-[#9e9e9e] text-right">about</Link>
+                    <Link href="/collection" className="text-2xl hover:text-[#9e9e9e] text-right">collection</Link>
+                    <Link href="/team" className="text-2xl hover:text-[#9e9e9e] text-right">team</Link>
+                    <Link href="/contact" className="text-2xl hover:text-[#9e9e9e] text-right">contact</Link>
+                </div>
+            </SheetContent>
+        </Sheet>
+    </div>
 }
