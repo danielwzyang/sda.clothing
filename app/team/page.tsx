@@ -1,6 +1,5 @@
 import Navbar from "@/components/ui/navbar"
 import TeamCard from "@/components/ui/teamcard"
-import daniel from "../../public/daniel.png"
 import profile from "../../public/profile.png"
 
 export default function Team() {
