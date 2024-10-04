@@ -8,7 +8,7 @@ export interface sectionProps {
 }
 
 export default function Section(props: sectionProps) {
-    return <div className={"flex flex-wrap" + (props.side == 1 ? "" : " sm:flex-row-reverse")} >
+    return <div className={"flex flex-wrap items-center" + (props.side == 1 ? "" : " sm:flex-row-reverse")} >
         <div className="w-full h-[400px] sm:w-[50vw] sm:aspect-[5/4] flex items-center">
             <Paragraph title={props.title} lines={props.lines} side={props.side} />
         </div>
