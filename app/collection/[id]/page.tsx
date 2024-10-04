@@ -8,7 +8,7 @@ import * as motion from "framer-motion/client"
 export async function generateStaticParams() {
     const clothing = await get()
 
-    return Object.keys(clothing).map((e: string) => { id: e })
+    return Object.keys(clothing).map((e: string) => ({ id: e }))
 }
 
 export default async function Clothing({ params }: { params: { id: string } }) {
@@ -17,7 +17,6 @@ export default async function Clothing({ params }: { params: { id: string } }) {
     if (!(id in clothing)) {
         return notFound()
     }
-
 
     return <div>
         <Navbar />
