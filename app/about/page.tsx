@@ -51,7 +51,7 @@ export default function About() {
                 "unhoused, refugees, and anyone",
                 "else in need. Any unsold clothing",
                 "will be donated as well. We're not",
-                "a business, we're a family"
+                "a business, we're a family."
             ]} side={-1} />
         </div>
     )
