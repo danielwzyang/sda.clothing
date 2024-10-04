@@ -1,15 +1,15 @@
 import app from "./config"
-import { getFirestore, collection, getDocs } from "firebase/firestore"
+import { getFirestore, collection, getDocs, getDoc } from "firebase/firestore"
 
 const db = getFirestore(app)
 
-export default async function get(id: string) {
+export default async function get() {
     try {
-        const snapshot = await getDocs(collection(db, id))
-        const documents = snapshot.docs.map(doc => ({
-            id: doc.id,
-            ...doc.data()
-        }))
+        const snapshot = await getDocs(collection(db, "clothes"))
+        const documents = snapshot.docs.reduce((obj: Record<string, any>, doc) => {
+            obj[doc.id] = doc.data()
+            return obj;
+        }, {})
 
         return documents
     } catch (error) {

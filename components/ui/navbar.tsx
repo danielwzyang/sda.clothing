@@ -22,7 +22,7 @@ export default function Navbar() {
             <SheetContent className="mt-20 w-fit h-fit bg-transparent border-0 p-0 pr-8" onOpenAutoFocus={(e) => e.preventDefault()}>
                 <SheetTitle></SheetTitle>
                 <SheetDescription></SheetDescription>
-                <div className="flex flex-col gap-1 ">
+                <div className="flex flex-col gap-1 bg-transparent">
                     <Link href="/" className="text-2xl hover:text-[#9e9e9e] text-right">home</Link>
                     <Link href="/about" className="text-2xl hover:text-[#9e9e9e] text-right">about</Link>
                     <Link href="/collection" className="text-2xl hover:text-[#9e9e9e] text-right">collection</Link>
