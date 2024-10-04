@@ -12,7 +12,7 @@ export interface carouselProps {
 export default function ClothingCarousel(props: carouselProps) {
     return (
         <div className="flex justify-center">
-            <Carousel className="w-[70vw] max-w-[500px]">
+            <Carousel className="w-[70vw] max-w-[50vh]">
                 <CarouselContent>
                     {
                         Array.from({ length: props.length }).map((_, i) => (
