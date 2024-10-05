@@ -2,10 +2,16 @@ import Navbar from "@/components/ui/navbar"
 import { ChevronDown } from "lucide-react"
 import * as motion from "framer-motion/client"
 import Section from "@/components/ui/aboutsection"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: 'About',
+    description: 'Learn more about our club!',
+}
 
 export default function About() {
     return (
-        <div>
+        <div className="mb-10">
             <Navbar />
 
             <div className="h-[75vh] flex items-center justify-center">

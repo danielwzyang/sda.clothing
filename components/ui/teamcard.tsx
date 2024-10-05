@@ -21,7 +21,7 @@ export interface cardProps {
     facebook: string,
     instagram: string,
     mail: string,
-    image: StaticImageData
+    image: string
 }
 
 export default function TeamCard(props: cardProps) {

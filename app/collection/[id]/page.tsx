@@ -11,6 +11,16 @@ export async function generateStaticParams() {
     return Object.keys(clothing).map((e: string) => ({ id: e }))
 }
 
+export async function generateMetadata({ params }: { params: { id: string } }) {
+    const id = params.id as keyof typeof clothing
+    const clothing = await get()
+
+    return {
+        title: clothing[id].name,
+        description: clothing[id].desc.join("\n")
+    }
+}
+
 export default async function Clothing({ params }: { params: { id: string } }) {
     const id = params.id as keyof typeof clothing
     const clothing = await get()
@@ -18,7 +28,7 @@ export default async function Clothing({ params }: { params: { id: string } }) {
         return notFound()
     }
 
-    return <div>
+    return <div className="mb-10">
         <Navbar />
         <motion.h1 initial={{ opacity: 0, y: "-200%" }} animate={{ opacity: 1, y: 0 }}
             transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.2 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.2 } }}

@@ -2,6 +2,12 @@ import ClothingCard from "@/components/ui/clothingCard"
 import Navbar from "@/components/ui/navbar"
 import * as motion from "framer-motion/client"
 import get from "@/firebase/get"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: 'Collection',
+    description: 'Check out our previous clothing!',
+}
 
 const drop1 = ["cmigyl", "igor", "brent", "yellowgundam", "greengundam", "pinkgundam", "venom", "batman", "shark", "sdastar"]
 
