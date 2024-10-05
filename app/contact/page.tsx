@@ -2,8 +2,8 @@ import Navbar from "@/components/ui/navbar"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: 'Contact',
-    description: 'Reach out to us!',
+    title: 'contact',
+    description: 'reach out to us!',
 }
 
 export default function Contact() {

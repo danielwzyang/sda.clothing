@@ -5,8 +5,8 @@ import Section from "@/components/ui/aboutsection"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: 'About',
-    description: 'Learn more about our club!',
+    title: 'about',
+    description: 'learn more about our club!',
 }
 
 export default function About() {

@@ -1,5 +1,11 @@
 import Link from "next/link";
 import * as motion from "framer-motion/client"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+    title: '404',
+    description: 'page not found',
+}
 
 export default function NotFound() {
     return <div className="w-screen h-screen flex flex-col items-center justify-center">

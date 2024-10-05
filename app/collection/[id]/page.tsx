@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     const clothing = await get()
 
     return {
-        title: clothing[id].name.split(" ").map((e: string) => e.charAt(0).toUpperCase() + e.slice(1)).join(" "),
-        description: clothing[id].desc.join("\n")
+        title: id in clothing ? clothing[id].name : "404",
+        description: id in clothing ? clothing[id].desc.join("\n") : "page not found"
     }
 }
 

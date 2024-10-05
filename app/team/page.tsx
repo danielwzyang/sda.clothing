@@ -4,8 +4,8 @@ import * as motion from "framer-motion/client"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: 'Team',
-    description: 'Meet our team!',
+    title: 'team',
+    description: 'meet our team!',
 }
 
 export default function Team() {
@@ -22,7 +22,7 @@ export default function Team() {
                         bio="I'm Ian, I'm on the track team and I love to draw. I work as a graphic designer and I'm interested in law."
                         facebook="Ian Villatoro"
                         instagram="chelitocuca"
-                        mail=":("
+                        mail="ianv32@nycstudents.net"
                     />
                 </motion.div>
 
