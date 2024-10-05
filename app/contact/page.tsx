@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 const lines = [
     <>If you have any questions,</>,
     <>please reach out at:</>,
-    <Link href="mailto:stuydonatedapparel@gmail.com" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
+    <Link key={0} href="mailto:stuydonatedapparel@gmail.com" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
         stuydonatedapparel@gmail.com
     </Link>,
-    <Link href="instagram.com/stuydonatedapparel" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
+    <Link key={0} href="instagram.com/stuydonatedapparel" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
         @stuydonatedapparel
     </Link>,
     <>Thank you!</>
@@ -35,13 +35,11 @@ export default function Contact() {
             <div className="h-[80vh] flex flex-col items-center justify-center">
                 {
                     lines.map((e, i) => {
-                        return <div key={i}>
-                            <motion.h1 initial={{ opacity: 0, y: "120%" }} animate={{ opacity: 1, y: 0 }}
+                        return <motion.h1 key={i} initial={{ opacity: 0, y: "120%" }} animate={{ opacity: 1, y: 0 }}
                                 transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: delays[i] }, y: { duration: 1, ease: [0.22, 1, 0.36, 1], delay: delays[i] } }}
                                 className={"w-fit mx-auto text-xl sm:text-2xl" + (i == 4 ? " mt-10" : "")}>
                                 {e}
                             </motion.h1>
-                        </div>
                     })
                 }
             </div>
