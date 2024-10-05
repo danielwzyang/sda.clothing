@@ -17,15 +17,15 @@ const lines = [
     <Link href="instagram.com/stuydonatedapparel" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
         @stuydonatedapparel
     </Link>,
-    <><h1 className="mt-10">Thank you!</h1></>
+    <>Thank you!</>
 ]
 
 const delays = [
     0.5,
     1,
     2,
-    3,
-    4.5
+    2.5,
+    4
 ]
 
 export default function Contact() {
@@ -35,11 +35,13 @@ export default function Contact() {
             <div className="h-[80vh] flex flex-col items-center justify-center">
                 {
                     lines.map((e, i) => {
-                        return <motion.div key={i} initial={{ opacity: 0, y: "120%" }} animate={{ opacity: 1, y: 0 }}
-                            transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: delays[i] }, y: { duration: 1, ease: [0.22, 1, 0.36, 1], delay: delays[i] } }}
-                            className="w-fit mx-auto text-xl sm:text-2xl">
-                            {e}
-                        </motion.div>
+                        return <div key={i}>
+                            <motion.h1 initial={{ opacity: 0, y: "120%" }} animate={{ opacity: 1, y: 0 }}
+                                transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: delays[i] }, y: { duration: 1, ease: [0.22, 1, 0.36, 1], delay: delays[i] } }}
+                                className={"w-fit mx-auto text-xl sm:text-2xl" + (i == 4 ? " mt-10" : "")}>
+                                {e}
+                            </motion.h1>
+                        </div>
                     })
                 }
             </div>
