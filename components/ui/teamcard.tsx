@@ -7,7 +7,7 @@ import {
     CardTitle,
 } from "./card"
 
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import facebook from "../../public/facebook.svg"
 import instagram from "../../public/instagram.svg"
 import mail from "../../public/mail.svg"
