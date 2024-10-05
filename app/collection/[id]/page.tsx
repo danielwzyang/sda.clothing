@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
     const clothing = await get()
 
     return {
-        title: clothing[id].name,
+        title: clothing[id].name.split(" ").map((e: string) => e.charAt(0).toUpperCase() + e.slice(1)).join(" "),
         description: clothing[id].desc.join("\n")
     }
 }
