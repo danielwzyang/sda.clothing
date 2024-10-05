@@ -32,11 +32,17 @@ export default function Navbar() {
                 <SheetTitle></SheetTitle>
                 <SheetDescription></SheetDescription>
                 <div className="flex flex-col gap-1 bg-transparent">
-                    <Link href="/" className="text-2xl hover:text-[#9e9e9e] text-right">home</Link>
-                    <Link href="/about" className="text-2xl hover:text-[#9e9e9e] text-right">about</Link>
-                    <Link href="/collection" className="text-2xl hover:text-[#9e9e9e] text-right">collection</Link>
-                    <Link href="/team" className="text-2xl hover:text-[#9e9e9e] text-right">team</Link>
-                    <Link href="/contact" className="text-2xl hover:text-[#9e9e9e] text-right">contact</Link>
+                    {
+                        ["home", "about", "collection", "team", "contact"].map((e, i) => {
+                            return <motion.div key={i}
+                                className="flex justify-end"
+                                initial={{ x: "100%" }}
+                                animate={{ x: 0 }}
+                                transition={{ duration: 0.5, delay: i * 0.075 }}>
+                                <Link href={"/" + e == "home" ? "" : e} className="text-2xl hover:text-[#9e9e9e] text-right">{e}</Link>
+                            </motion.div>
+                        })
+                    }
                 </div>
             </SheetContent>
         </Sheet>
