@@ -48,7 +48,7 @@ export default function Team() {
                     bio="I'm Aidan, I'm on the football, swim, and volleyball teams. When I'm free, I love to eat and enjoy nature."
                     facebook="Aidan Chan"
                     instagram="aidan.chan__"
-                    mail=":("
+                    mail="aidanc78@nycstudents.net"
                 />
                 </motion.div>
 
@@ -74,7 +74,7 @@ export default function Team() {
                     bio="I'm Eman! I run track and enjoy drawing. I love listening to music and I'm interested in finance."
                     facebook="Eman Yay"
                     instagram="emantoonice"
-                    mail=":("
+                    mail="emmanuelp160@nycstudents.net"
                 />
                 </motion.div>    
 
