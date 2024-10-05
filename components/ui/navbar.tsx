@@ -39,7 +39,7 @@ export default function Navbar() {
                                 initial={{ x: "100%" }}
                                 animate={{ x: 0 }}
                                 transition={{ duration: 0.5, delay: i * 0.075 }}>
-                                <Link href={"/" + e == "home" ? "" : e} className="text-2xl hover:text-[#9e9e9e] text-right">{e}</Link>
+                                <Link href={"/" + (e == "home" ? "" : e)} className="text-2xl hover:text-[#9e9e9e] text-right">{e}</Link>
                             </motion.div>
                         })
                     }
