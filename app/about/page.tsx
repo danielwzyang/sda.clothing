@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <div className="mb-10">
+        <div>
             <Navbar />
 
             <div className="h-[75vh] flex items-center justify-center">
