@@ -40,32 +40,6 @@ export default function Team() {
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
-                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.4 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.4 } }}>
-                <TeamCard
-                    name="Aidan Chan"
-                    image="/aidan.png"
-                    position="president"
-                    bio="I'm Aidan, I'm on the football, swim, and volleyball teams. When I'm free, I love to eat and enjoy nature."
-                    facebook="Aidan Chan"
-                    instagram="aidan.chan__"
-                    mail="aidanc78@nycstudents.net"
-                />
-                </motion.div>
-
-                <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
-                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.6 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.6 } }}>
-                <TeamCard
-                    name="Sid Shrivastava"
-                    image="/sid.png"
-                    position="graphics co-director"
-                    bio="Hey I'm Sid! I'm the current SU and Junior Caucus graphics director. I love collages, painting, and art history."
-                    facebook="Siddharth Shrivastava"
-                    instagram="sid.shrivastava15"
-                    mail="siddharth.shrivastava@stuysu.org"
-                />
-                </motion.div>
-
-                <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
                     transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.8 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.8 } }}>
                 <TeamCard
                     name="Emmanuel Poku"
