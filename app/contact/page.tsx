@@ -14,7 +14,7 @@ const lines = [
     <Link key={0} href="mailto:stuydonatedapparel@gmail.com" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
         stuydonatedapparel@gmail.com
     </Link>,
-    <a key={0} href="instagram.com/stuydonatedapparel" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
+    <a key={0} href="https://www.instagram.com/stuydonatedapparel" target="_blank" className="text-[#cfd0ff] hover:text-[#a8a9ff] underline">
         @stuydonatedapparel
     </a>,
     <>Thank you!</>
