@@ -12,7 +12,7 @@ export default function Team() {
     return (
         <div className="mb-10">
             <Navbar />
-            <div className="my-5 flex flex-wrap justify-center mx-auto w-[1200px] max-w-[90%] gap-5">
+            <div className="my-5 flex flex-wrap justify-center mx-auto w-[1300px] max-w-[90%] gap-5">
                 <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
                     transition={{ opacity: { duration: 0.6, ease: "easeInOut" }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1] } }}>
                     <TeamCard
