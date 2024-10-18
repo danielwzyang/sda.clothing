@@ -43,6 +43,7 @@ used in the about page sections
 |title|string<br><br>used as the header|
 |lines|string[]<br><br>used as the lines for the paragraph; each string represents its own line and the line breaks have to be made manually to match the width of the paragraph|
 |side|1 or -1<br><br>1 means on the left side, so the text is aligned to the left and the skew is for the left side<br>-1 means on the right side, so the text is aligned to the right and the skew is for the right side|
+
 this isn't used directly on a page but it's referenced in the Section component
 
 ### aboutSection.tsx
@@ -64,6 +65,7 @@ the first image for any given id is the id0; ex: id = "cmigyl", cloudinary id fo
 |--|--|
 |id|string<br><br>has to be valid clothing id|
 |data|object that contains the name and price<br><br>name: string, price: string|
+
 the data prop isn't all that important since you can just pass the  entire document data since it contains the name and price
 
 ### clothingCarousel.tsx
