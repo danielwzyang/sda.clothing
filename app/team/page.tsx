@@ -40,7 +40,7 @@ export default function Team() {
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
-                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.8 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.4 } }}>
+                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.4 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.4 } }}>
                     <TeamCard
                         name="Emmanuel Poku"
                         image="/eman.png"
@@ -53,7 +53,7 @@ export default function Team() {
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0, y: "25%" }} animate={{ opacity: 1, y: 0 }}
-                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 1 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.6 } }}>
+                    transition={{ opacity: { duration: 0.6, ease: "easeInOut", delay: 0.6 }, y: { duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.6 } }}>
                     <TeamCard
                         name="Tahsan Kashem"
                         image="/tahsan.png"
