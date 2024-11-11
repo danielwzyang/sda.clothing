@@ -1,5 +1,5 @@
 import Navbar from "@/components/ui/navbar"
-import TeamCard from "@/components/ui/teamCard"
+import TeamCard from "@/components/ui/teamcard"
 import * as motion from "framer-motion/client"
 import { Metadata } from "next"
 
