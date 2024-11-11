@@ -8,9 +8,10 @@ export default async function get() {
         const snapshot = await getDocs(collection(db, "clothes"))
         const documents = snapshot.docs.reduce((obj: Record<string, any>, doc) => {
             obj[doc.id] = doc.data()
-            return obj;
+            return obj
         }, {})
 
+        console.log(documents)
         return documents
     } catch (error) {
         console.error("error fetching documents: ", error)
