@@ -11,7 +11,6 @@ export default async function get() {
             return obj
         }, {})
 
-        console.log(documents)
         return documents
     } catch (error) {
         console.error("error fetching documents: ", error)
