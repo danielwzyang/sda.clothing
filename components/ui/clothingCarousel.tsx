@@ -1,7 +1,6 @@
 "use client"
 
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./carousel"
-import { CldImage } from "next-cloudinary"
 
 export interface carouselProps {
     tag: string,
@@ -17,18 +16,14 @@ export default function ClothingCarousel(props: carouselProps) {
                     {
                         Array.from({ length: props.length }).map((_, i) => (
                             <CarouselItem key={i}>
-                                <div className="p-1">
-                                    <CldImage src={props.tag + i} alt={props.tag + i} width={1000} height={1000} />
-                                </div>
+                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/${props.tag}${i}`} alt={props.tag + i} width={1000} height={1000} className="p-1" />
                             </CarouselItem>
                         ))
                     }
                     {
                         props.models.map((e, i) => (
                             <CarouselItem key={i}>
-                                <div className="p-1">
-                                    <CldImage src={e} alt={e} width={1000} height={1000} />
-                                </div>
+                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/${e}`} alt={e} width={1000} height={1000} className="p-1" />
                             </CarouselItem>
                         ))
                     }
