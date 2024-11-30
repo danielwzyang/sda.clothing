@@ -16,14 +16,14 @@ export default function ClothingCarousel(props: carouselProps) {
                     {
                         Array.from({ length: props.length }).map((_, i) => (
                             <CarouselItem key={i}>
-                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/${props.tag}${i}`} alt={props.tag + i} width={1000} height={1000} className="p-1" />
+                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/f_auto/q_auto/${props.tag}${i}`} alt={props.tag + i} width={1000} height={1000} className="p-1" />
                             </CarouselItem>
                         ))
                     }
                     {
                         props.models.map((e, i) => (
                             <CarouselItem key={i}>
-                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/${e}`} alt={e} width={1000} height={1000} className="p-1" />
+                                <img src={`https://res.cloudinary.com/stuydonatedapparel/image/upload/w_1000/f_auto/q_auto/${e}`} alt={e} width={1000} height={1000} className="p-1" />
                             </CarouselItem>
                         ))
                     }
